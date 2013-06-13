@@ -1,4 +1,4 @@
-Getting_Started_with_SQLite_in_NET
+Getting Started with SQLite in .NET
 ==================================
 
 
