@@ -17,7 +17,8 @@ and in the second part I’ll discuss some miscellaneous subjects like how to pa
 to make them much faster and safer.
 
 
-Let’s get started.
+Create a C# console project:
+-----------------------------
 
 
 Create a standard C# console project.
@@ -44,6 +45,7 @@ You’ve successfully added the SQLite library to you project!
 
 
 Creating a database file:
+-------------------------
 
 You usually don’t need to create a new database file, you work with an existing one,
 but for those cases where you do need to create a brand new one, here’s the code:
@@ -54,6 +56,7 @@ SQLiteConnection.CreateFile("MyDatabase.sqlite");
 
 
 Connecting to a database:
+--------------------------
 
 Before you can use the database, you’ll need to connect to it.
 This connection is stored inside a connection object.
@@ -89,6 +92,8 @@ so don’t forget to call that after you’re done with your connection.
 
 
 Creating a table:
+------------------
+
 
 Let’s write some SQL now. We’ll create a table with two columns,
 the first one contains names and the second one contains scores.
@@ -132,6 +137,7 @@ But you could imagine that it might be interesting to know this information in U
 
 
 Filling our table:
+-------------------
 
 
 Let’s fill our table with some values, so we can do some SELECT queries.
@@ -167,7 +173,6 @@ command.ExecuteNonQuery();
 
 
 
-
 As you can see, this is three times pretty much the same piece code. But it works!
 
 
@@ -176,6 +181,8 @@ As you can see, this is three times pretty much the same piece code. But it work
 
 
 Getting the high scores out of our database:
+---------------------------------------------
+
 
 
 Let’s query the database for the high scores sorted on score in descending order.
